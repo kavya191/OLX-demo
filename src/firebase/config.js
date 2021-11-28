@@ -1,4 +1,7 @@
 import firebase from "firebase";
+import 'firebase/auth'
+import 'firebase/firebase'
+
 const firebaseConfig = {
     apiKey: "AIzaSyDNuxzYPet94NvlaXADQxKRrzAAj2jCXFA",
     authDomain: "olx-demo-12401.firebaseapp.com",
@@ -10,4 +13,4 @@ const firebaseConfig = {
     measurementId: "G-926KWT6KEL"
   };
 
-   export default firebase.initializeApp(firebaseConfig)
+export default firebase.initializeApp(firebaseConfig)
