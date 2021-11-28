@@ -6,7 +6,9 @@ import Context from './store/Context'
 import firebase from './firebase/config'; 
 ReactDOM.render(
 <FirebaseContext.Provider value={{firebase}}>
-   <Context/>
+   <Context>
    <App />
+   </Context>
+
 </FirebaseContext.Provider>
 , document.getElementById('root'));

@@ -10,7 +10,7 @@ import { AuthContext, FirebaseContext } from '../../store/Context';
 function Header() {
   const {user} = useContext(AuthContext)
   const {firebase } = useContext(FirebaseContext)
-  const history = useHistory
+  const history = useHistory()
   return (
     <div className="headerParentDiv">
       <div className="headerChildDiv">
