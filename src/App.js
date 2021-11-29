@@ -4,6 +4,7 @@ import Signup from './Pages/Signup'
 import Login from './Pages/Login'
 import Create from './Pages/Create'
 import View from './Pages/ViewPost'
+
 import './App.css';
 import { AuthContext, FirebaseContext } from './store/Context';
 import Post from './store/PostContext'
@@ -12,6 +13,7 @@ import Post from './store/PostContext'
  * ?  =====Import Components=====
  */
 import Home from './Pages/Home';
+import SellButtonPlus from './assets/SellButtonPlus';
 function App() {
   const {setUser} =useContext(AuthContext)
   const {firebase} = useContext(FirebaseContext)
@@ -39,6 +41,9 @@ function App() {
       </Route>
       <Route  path='/view'>
       <View/>
+      </Route>
+      <Route  path='/sell'>
+      <SellButtonPlus/>
       </Route>
       </Router>
    </Post>

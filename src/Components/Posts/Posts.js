@@ -58,13 +58,16 @@ function Posts() {
           })
 }
           
-        </div>
+        
       </div>
-      <div className="recommendations">
+      </div>
+
+     <div className="recommendations">
         <div className="heading">
           <span>Fresh recommendations</span>
         </div>
-        <div className="cards">
+
+         <div className="cards">
           <div className="card">
             <div className="favorite">
               <Heart></Heart>

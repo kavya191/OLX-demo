@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Banner.css';
 import Arrow from '../../assets/Arrow'
@@ -8,17 +9,17 @@ function Banner() {
       <div className="bannerChildDiv">
         <div className="menuBar">
           <div className="categoryMenu">
-            <span>ALL CATEGORIES</span>
+          <Link to='/categories'>ALL CATEGORIES</Link>
             <Arrow></Arrow> 
           </div>
           <div className="otherQuickOptions">
-            <span>Cars</span>
-            <span>Motorcy...</span>
-            <span>Mobile Ph...</span>
-            <span>For Sale:Houses & Apart...</span>
-            <span>Scoot...</span>
-            <span>Commercial & Other Ve...</span>
-            <span>For Rent: House & Apart...</span>
+        <Link to="/cars">Cars</Link>
+          <Link to ='/motorcy'>Motorcy...</Link>
+            <Link to='/mobile'>Mobile Ph...</Link>
+           <Link to='sale/'>For Sale:Houses & Apart...</Link>
+          <Link to='/scoot'>Scoot...</Link>
+           <Link to='/commercial'>Commercial & Other Ve...</Link>
+          <Link to='/rent'>For Rent: House & Apart...</Link>
           </div>
         </div>
         <div className="banner">
